@@ -1,9 +1,11 @@
-const ButtonSubs = ({ style }) =>
+export const ButtonGradient = ({ text, style, icon }) =>
 {
   const defaultStyle = {
+    display: 'flex',
+    alignItems: 'center',
     color: 'rgba(255, 255, 255, 1)',
     border: 'none',
-    padding: '8px 10px',
+    padding: '10px',
     fontSize: '15px',
     textTransform: 'capitalize',
     borderRadius: '5px',
@@ -14,9 +16,7 @@ const ButtonSubs = ({ style }) =>
 
   return (
     <>
-      <button style={styles}>subscribe</button>
+      <button style={styles}>{ text }{ icon }</button>
     </>
   )
 }
-
-export default ButtonSubs

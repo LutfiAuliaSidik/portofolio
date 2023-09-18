@@ -1,4 +1,5 @@
 .container.hero {
+  max-width: 350px;
   margin: 25px 20px;
 }
 .hero {
@@ -17,27 +18,79 @@
   -webkit-background-clip: text;
   background-image: linear-gradient(90deg, rgba(13,169,228,1) 0%, rgba(11,206,212,1) 100%);
 }
-.hero p:nth-child(3) {
-  max-width: 250px;
-}
 .hero form {
   position: relative;
   margin: 20px 0;
   max-width: 320px;
 }
-.hero form input[type=email]::placeholder {
-  color: rgba(255, 255, 255, .5);
-  font-size: 12px;
-  text-transform: capitalize;
-}
 .hero form input[type=email] {
   color: rgba(255, 255, 255, 1);
-  max-width: 250px;  
-  height: 45px;
+  width: 100%;
+  height: 50px;
   border: none;
   outline: none;
   padding: 0 100px 0 10px;
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 5px;
   background: rgba(34, 47, 66, 1);
+}
+.hero form input[type=email]::placeholder {
+  color: rgba(255, 255, 255, .5);
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.container.skill {
+  margin: 0 20px;
+  border-radius: 8px;
+  background: rgba(20, 28, 49, 1);
+}
+#icon-web-development,
+#icon-programming {
+  fill: rgba(255, 255, 255, 1);
+  width: 45px;
+}
+.skill-card {
+  max-width: 300px;
+  padding: 25px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.skill-card h1 {
+  color: rgba(255, 255, 255, 1);
+  margin: 10px 0;
+  font-size: 20px;
+}
+.skill-card p {
+  color: rgba(255, 255, 255, .5);
+  font-size: 15px;
+}
+
+.container.project {
+  margin: 50px 20px;
+}
+.project h1 {
+  color: transparent;
+  margin: 15px 0;
+  font-size: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, rgba(13,169,228,1) 0%, rgba(11,206,212,1) 100%);
+}
+.project p {
+  color: rgba(255, 255, 255, .5);
+  font-size: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media screen and (orientation: landscape) {
+  .container.skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
