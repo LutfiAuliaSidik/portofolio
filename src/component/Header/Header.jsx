@@ -1,5 +1,5 @@
 import './Header.css'
-import { ButtonGradient } from '../Fraction/Button'
+import { ButtonGradient, ButtonHamburger } from '../Fraction/Button'
 
 const Header = () =>
 {
@@ -16,6 +16,7 @@ const Header = () =>
           </ul>
         </nav>
       <ButtonGradient text="subscribe"/>
+      <ButtonHamburger/>
     </header>
   )
 }

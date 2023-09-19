@@ -81,6 +81,8 @@
 }
 .project p {
   color: rgba(255, 255, 255, .5);
+  max-width: 500px;
+  margin: 0 auto;
   font-size: 15px;
   text-align: center;
   text-transform: capitalize;
@@ -94,3 +96,34 @@
     justify-content: center;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container.skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .skill-card h1 {
+    font-size: 20px;
+  }
+  .skill-card p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container.skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .skill-card h1 {
+    font-size: 20px;
+  }
+  .skill-card p {
+    font-size: 14px;
+  }
+}
+
