@@ -17,11 +17,7 @@ export const ButtonGradient = ({ text, style, icon }) =>
   
   const styles = {...defaultStyle, ...style}
 
-  return (
-    <>
-      <button type="submit" style={styles}>{ text }{ icon }</button>
-    </>
-  )
+  return <button type="submit" style={styles}>{ text }{ icon }</button>
 }
 
 export const ButtonHamburger = () =>
@@ -46,7 +42,5 @@ export const ButtonHamburger = () =>
     background: 'linear-gradient(90deg, rgba(13,169,228,1) 0%, rgba(11,206,212,1) 100%)'
   }
 
-  return (
-    <button type="button" style={style} onClick={() => handlerButton()}><Icon.Justify size={30}/></button>
-  )
+  return <button type="button" style={style} onClick={() => handlerButton()}><Icon.Justify size={30}/></button>
 }
