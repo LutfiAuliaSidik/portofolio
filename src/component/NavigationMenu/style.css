@@ -1,0 +1,33 @@
+.container.dropdown {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 15px;
+  box-shadow: 0 2px 5px rgba(34, 47, 66, .5);
+  background: var(--background-default);
+  transform: translateY(-220px);
+  transition: all .5s ease-in-out;
+  opacity: 0;
+}
+.dropdown.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.list-menu {
+  line-height: 35px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.list-menu li a {
+  color: rgba(255, 255, 255, .5);
+  font-size: 15px;
+}
+.list-menu li a:hover {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, rgba(13,169,228,1) 0%, rgba(11,206,212,1) 100%);
+  transition: all .3s ease-in-out;
+}

@@ -14,3 +14,83 @@ body {
   font-family: sans-serif;
   background: var(--background-default);
 }
+
+@media screen and (orientation: landscape) and (min-width: 550px){
+  .container.nav {
+    display: block;
+  }
+  .header button[type=submit] {
+    display: block !important;
+  }
+  .header button[type=button] {
+    display: none !important;
+  }
+  .container.dropdown {
+    display: none;
+  }
+
+  .container.skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container.nav {
+    display: block;
+  }
+  .header button[type=submit] {
+    display: block !important;
+  }
+  .header button[type=button] {
+    display: none !important;
+  }
+  .container.dropdown {
+    display: none;
+  }
+
+  .container.skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .skill-card h1 {
+    font-size: 20px;
+  }
+  .skill-card p {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .container.nav {
+    display: block;
+  }
+  .header button[type=submit] {
+    display: block !important;
+  }
+  .header button[type=button] {
+    display: none !important;
+  }
+  .container.dropdown {
+    display: none;
+  }
+
+  .container.skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .skill-card h1 {
+    font-size: 20px;
+  }
+  .skill-card p {
+    font-size: 14px;
+  }
+}
+

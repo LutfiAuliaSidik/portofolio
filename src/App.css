@@ -29,15 +29,21 @@
   height: 50px;
   border: none;
   outline: none;
-  padding: 0 100px 0 10px;
+  padding: 0 110px 0 10px;
   font-size: 15px;
   border-radius: 5px;
   background: rgba(34, 47, 66, 1);
+}
+.hero form input[type=email]:focus {
+  border: 1px solid rgba(255, 255, 255, .2);
 }
 .hero form input[type=email]::placeholder {
   color: rgba(255, 255, 255, .5);
   font-size: 15px;
   text-transform: capitalize;
+}
+.hero form button:hover {
+  background: linear-gradient(90deg, rgba(13,169,228,1) 100%, rgba(11,206,212,1) 100%) !important;
 }
 
 .container.skill {
@@ -53,6 +59,7 @@
 .skill-card {
   max-width: 300px;
   padding: 25px;
+  margin: 0 auto;
   text-align: center;
   text-transform: capitalize;
 }
@@ -87,43 +94,3 @@
   text-align: center;
   text-transform: capitalize;
 }
-
-@media screen and (orientation: landscape) {
-  .container.skill {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .container.skill {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .skill-card h1 {
-    font-size: 20px;
-  }
-  .skill-card p {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container.skill {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .skill-card h1 {
-    font-size: 20px;
-  }
-  .skill-card p {
-    font-size: 14px;
-  }
-}
-

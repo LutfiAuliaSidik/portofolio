@@ -1,4 +1,5 @@
-import './Header.css'
+import './style.css'
+import NavigationMenu from '../NavigationMenu/NavigationMenu'
 import { ButtonGradient, ButtonHamburger } from '../Fraction/Button'
 
 const Header = () =>
@@ -15,6 +16,7 @@ const Header = () =>
             <li><a href="#">contact</a></li>
           </ul>
         </nav>
+      <NavigationMenu />
       <ButtonGradient text="subscribe"/>
       <ButtonHamburger/>
     </header>

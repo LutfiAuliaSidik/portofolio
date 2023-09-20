@@ -1,4 +1,5 @@
 import * as Icon from "react-bootstrap-icons"
+import { useNavbarDropdown } from "../../stores/app"
 
 export const ButtonGradient = ({ text, style, icon }) =>
 {
@@ -25,6 +26,15 @@ export const ButtonGradient = ({ text, style, icon }) =>
 
 export const ButtonHamburger = () =>
 {
+
+  const { status, setStatus } = useNavbarDropdown((state) => (
+    { 
+      status: state.status,
+      setStatus: state.setStatus 
+    }))
+  
+  const handlerButton = () => (!status) ? setStatus(true) : setStatus(false)
+
   const style = {
     display: 'flex',
     color: 'rgba(255, 255, 255, 1)',
@@ -37,6 +47,6 @@ export const ButtonHamburger = () =>
   }
 
   return (
-    <button type="button" style={style}><Icon.Justify size={30}/></button>
+    <button type="button" style={style} onClick={() => handlerButton()}><Icon.Justify size={30}/></button>
   )
 }
